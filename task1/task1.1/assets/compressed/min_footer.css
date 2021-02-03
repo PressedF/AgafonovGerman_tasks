@@ -1,0 +1,1 @@
+.footer{border-top:2px solid var(--super-light);justify-content:space-between;align-items:center;padding-bottom:40px}.footer_text{margin:24px 2px 0 10px}.footer_text > span{color:var(--super-green);font-size:12px}.footer_text > small{margin-top:6px;font-size:12px}.footer_links{display:flex}.footer_links > a{margin:23px 4px 0 0}.footer_links > a > img{max-width:32px;height:32px}
