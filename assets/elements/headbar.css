@@ -1,0 +1,114 @@
+.content__navbar{
+    display: flex; 
+    flex-flow: column nowrap;
+    
+    margin-right: 44px;
+}
+
+/* .navbar > child */
+.content__navbar a{     
+    display: flex;
+    align-items: center;
+    color: var(--super-green);
+    
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.item .item-1::before{
+    background-image: url(../../imgs/svg/food-icon.svg);
+}
+
+.item .item-2::before{
+    background-image: url(../../imgs/svg/blog-icon.svg);
+}
+
+.item .item-3::before{
+    background-image: url(../../imgs/svg/a-list-icon.svg);
+}
+
+.item .item-4::before{
+    background-image: url(../../imgs/svg/camera-icon.svg);
+}
+
+.item .item-5::before{
+    background-image: url(../../imgs/svg/about-icon.svg);
+}
+
+.item .item-1::before,
+.item .item-2::before,
+.item .item-3::before,
+.item .item-4::before,
+.item .item-5::before{
+    content: '';
+    
+    width: 30px;
+    height: 30px;
+    
+    margin-right: 12px;
+}
+
+.content__navbar .content__navbar-img{
+    display: block;
+    max-width: 120px;
+    height: 120px;
+    margin-bottom: 5px;
+}
+
+/* .navbar > .navbar_nav > child */
+.content__navbar-nav{
+    display: flex;
+    flex-flow: column nowrap;
+    
+    padding-right: 20px;
+}
+
+.content__navbar-nav .content__navbar-nav-item{
+    font-size: 14px;
+    padding: 13px 3px 39px 0;
+    
+    font-family: Arial, sans-serif;
+}
+
+/* .navbar > .navbar_tweet > child */
+.content__navbar-tweet{
+    padding-top: 2px;
+    margin-bottom: 10px;
+}
+
+.content__navbar-tweet .content__navbar-tweet-content{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+/* .navbar > .navbar_tweet > .navbar_tweet_content > child */
+.content__navbar-tweet .content__navbar-tweet-title{
+    border-bottom: 1px dashed var(--super-light);
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    
+    font-size: 12px;
+    font-family: Verdana, sans-serif;
+    
+    line-height: 12px;
+    font-family: Verdana, sans-serif;
+}
+
+.content__navbar-tweet .content__navbar-tweet-link{
+    padding: 1.5px 6px;
+    
+    border: 1px solid var(--super-light);
+    
+    font-size: 10px;
+    
+    border-radius: 5px;
+    line-height: 12px;
+}
+
+
+.content__navbar-tweet .content__navbar-tweet-text{
+    font-size: 10px;
+    line-height: 19px;
+    
+    margin-bottom: 15px;
+}

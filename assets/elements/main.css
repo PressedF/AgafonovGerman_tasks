@@ -1,0 +1,242 @@
+.content__main{
+    --width-img: 100%;
+    --height-img: 445px;
+    
+    padding-right: 44px;
+}
+
+/* .main > .main_bar > .main_bar_figure > child */
+.content__main-bar .content__main-img{
+    background-image: url(../../imgs/jpg/baner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    width: var(--width-img);
+    height: var(--height-img);
+    
+    position: relative;
+    
+    display: flex;
+ 
+    align-items: flex-start;
+    flex-flow: column nowrap;
+
+}
+
+.content__main-img::before{
+    content: 'Share your Fool Sence';
+    
+    margin-top: auto;
+    
+    padding: 24px;
+    background-color: var(--white);
+    color: var(--black);
+
+    font-size: 22px;
+}
+
+.content__main-img::after{
+    content: 'Submit yout favorite recipes, become a contributor, or get interviewed.';
+    
+    padding: 14px 30px;
+    background-color: var(--black);
+    color: var(--white);
+    
+
+    font-size: 14px;
+    
+    margin-bottom: 69px;
+}
+
+.content__main-img::before, .content__main-img::after{
+    display: block
+}
+
+/* .main > .main_bar > .main_nav > child */
+.content__main-nav{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.content__main-nav .content__main-nav-link{
+    padding: 20px 40px 20px 20px;
+    background-color: var(--peach);
+    
+    flex: 1 1;
+    transition: background-color .6s ease-in-out;
+}
+
+.content__main-nav .content__main-nav-link:focus, 
+.content__main-nav .content__main-nav-link:active,
+.content__main-nav .content__main-nav-link:hover{
+    background-color: var(--low-light);
+    
+    transition: background-color .6s ease-in-out;
+}
+
+.content__main-nav-link .content__main-nav-link-title,
+.content__main-nav-link .content__main-nav-link-text{
+    color: var(--super-green);
+}
+
+.content__main-nav-link .content__main-nav-link-title{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    
+    font-family: Arial, sans-serif;
+}
+
+.content__main-nav .content__main-nav-link-text{
+    display: block;
+    font-size: 10px;
+    font-weight: normal;
+    
+    font-family: Arial, sans-serif;
+    
+    margin-top: 2px;
+}
+
+
+/* .main > .main_sign > child */
+.content__main-sign{
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-between;
+    
+    border-bottom: 3px dashed var(--super-light);
+    border-top: 3px dashed var(--super-light);
+    
+    margin-top: 20px;
+    margin-bottom: 29px;
+    padding: 30px;
+}
+
+.content__main-sign .content__main-sign-text{
+    font-size: 14px;    
+    width: 530px;
+    
+    font-weight: 400;
+    font-family: Arial, sans-serif;
+    
+    display: flex;
+    align-items: center;
+}
+
+.content__main-sign .content__main-sign-text::before{
+    content: url(../../imgs/svg/mail-icon.svg);
+    
+    display: block;
+    
+    max-width: 32px;
+    height: 26px;
+    
+    margin-right: 16px;
+}
+
+.content__main-form{
+    display: inline-flex;
+}
+
+.content__main-form .content__main-form-input[type="email"],
+.content__main-form .content__main-form-button{
+    height: 22px;   
+}
+
+.content__main-form .content__main-form-input[type="email"]{
+    border: 1px solid var(--super-light);
+    font-size: 10px;
+    
+    margin-right: 16px;
+    width: 160px;
+}
+
+.content__main-form .content__main-form-input[type="email"]::placeholder{
+    color: var(--super-grey);
+    
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.content__main-form .content__main-form-button{
+    outline: none;
+    background: linear-gradient(180deg, #F4F3F3 0%, #BBB9B9 100%);
+    border: 1px solid var(--super-light);
+    border-radius: 2px;
+    
+    font-size: 10px;
+    
+    width: 80px;
+    justify-self: center;
+}
+
+/* .main > .main_cards > child */
+.content__main-cards{
+    display: flex;
+    flex-flow: row wrap;
+    
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.content__main-cards .content__main-cards-card{
+    display: flex;
+    flex-flow: column nowrap;
+    
+    flex-basis: 207px;
+    height: 336px;
+}
+
+.content__main-cards-card .content__main-card-header{
+    max-width: 207px;
+    height: 143px;
+    
+    border: 1px solid var(--super-light);
+    filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.25));
+    
+    margin-bottom: 11px;
+}
+
+.content__main-cards-card .content__main-card-middle{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.content__main-card-middle .content__main-card-title{
+    color: var(--super-green);
+    margin-bottom: 9px;
+}
+
+.content__main-card-middle .content__main-card-text{
+    margin-bottom: 11px;
+    font-size: 14px;
+    line-height: 20px;
+    
+    letter-spacing: -.02em;
+}
+
+.content__main-cards-card .content__main-card-footer{
+    display: flex;
+}
+
+.content__main-card-footer .content__main-card-date, 
+.content__main-card-footer .content__main-card-link{
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -.02em;
+}
+
+.content__main-card-footer .content__main-card-date{
+    color: var(--super-grey);
+}
+
+.content__main-card-footer .content__main-card-date:after{
+    content: '/';
+}
+
+.content__main-card-footer .content__main-card-link::after{
+    content: '\2026';
+}

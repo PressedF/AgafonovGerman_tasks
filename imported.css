@@ -1,0 +1,15 @@
+@import "./assets/settings/reset.css";
+@import "./assets/tools/imports.css";
+
+@import "./assets/design_tokkens/colors.css";
+
+/*@import "./assets/compressed/import.css";*/
+
+
+@import "./assets/elements/headbar.css";
+@import "./assets/elements/main.css";
+@import "./assets/elements/footer.css";
+
+
+@import "./assets/tools/media.css";
+
