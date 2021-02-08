@@ -15,40 +15,40 @@
     line-height: 14px;
 }
 
-.item .item-1::before{
+.nav-item .nav-item-Tastemakers::before{
     background-image: url(../../imgs/svg/food-icon.svg);
 }
 
-.item .item-2::before{
+.nav-item .nav-item-Blog::before{
     background-image: url(../../imgs/svg/blog-icon.svg);
 }
 
-.item .item-3::before{
+.nav-item .nav-item-TheAList::before{
     background-image: url(../../imgs/svg/a-list-icon.svg);
 }
 
-.item .item-4::before{
+.nav-item .nav-item-Contribure::before{
     background-image: url(../../imgs/svg/camera-icon.svg);
 }
 
-.item .item-5::before{
+.nav-item .nav-item-About::before{
     background-image: url(../../imgs/svg/about-icon.svg);
 }
 
-.item .item-1::before,
-.item .item-2::before,
-.item .item-3::before,
-.item .item-4::before,
-.item .item-5::before{
+.nav-item .nav-item-Tastemakers::before,
+.nav-item .nav-item-Blog::before,
+.nav-item .nav-item-TheAList::before,
+.nav-item .nav-item-Contribure::before,
+.nav-item .nav-item-About::before{
     content: '';
     
     width: 30px;
     height: 30px;
     
-    margin-right: 12px;
+    margin-right: 15.63px;
 }
 
-.content__navbar .content__navbar-img{
+.content__navbar-link .content__navbar-link-img{
     display: block;
     max-width: 120px;
     height: 120px;
@@ -111,4 +111,18 @@
     line-height: 19px;
     
     margin-bottom: 15px;
+}
+
+
+
+.content__navbar-tweet-link{
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .5s;
+}
+
+.content__navbar-tweet-link:hover{
+    background-size: 100% 4px;
 }

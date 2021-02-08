@@ -7,4 +7,6 @@ body{
     --low-light: #d9efec;
     --peach:  #EFF8F7;
     --super-green:  #34ACA7;
+    
+    --white-op6: rgba(255, 255, 255, .6);
 }

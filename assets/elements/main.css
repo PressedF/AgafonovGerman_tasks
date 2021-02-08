@@ -14,44 +14,50 @@
     
     width: var(--width-img);
     height: var(--height-img);
-    
-    position: relative;
-    
+
     display: flex;
  
     align-items: flex-start;
+    justify-content: flex-end;
     flex-flow: column nowrap;
-
 }
 
-.content__main-img::before{
-    content: 'Share your Fool Sence';
+
+.content__main-img .content__main-img-header,
+.content__main-img .content__main-img-description{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content__main-img .content__main-img-header{
+    min-width: 272px;
+    min-height: 49px;
     
-    margin-top: auto;
-    
-    padding: 24px;
     background-color: var(--white);
     color: var(--black);
-
+    
     font-size: 22px;
+    
+    line-height: 22px;
 }
 
-.content__main-img::after{
-    content: 'Submit yout favorite recipes, become a contributor, or get interviewed.';
-    
-    padding: 14px 30px;
+.content__main-img .content__main-img-description{
     background-color: var(--black);
     color: var(--white);
     
-
     font-size: 14px;
     
-    margin-bottom: 69px;
+    line-height: 14px;
+    
+    min-width: 487px;
+    min-height: 42px;
 }
 
-.content__main-img::before, .content__main-img::after{
-    display: block
+.content__main-img > :last-child{
+    margin-bottom: 49px;
 }
+
 
 /* .main > .main_bar > .main_nav > child */
 .content__main-nav{
@@ -178,7 +184,6 @@
     display: flex;
     flex-flow: row wrap;
     
-    align-items: flex-start;
     justify-content: space-between;
 }
 
@@ -187,18 +192,22 @@
     flex-flow: column nowrap;
     
     flex-basis: 207px;
-    height: 336px;
 }
 
+.content__main-card-img{
+    outline: 1px solid var(--super-light);
+    margin-bottom: 11px;
+}
+
+/*
 .content__main-cards-card .content__main-card-header{
-    max-width: 207px;
     height: 143px;
     
     border: 1px solid var(--super-light);
     filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.25));
     
     margin-bottom: 11px;
-}
+}*/
 
 .content__main-cards-card .content__main-card-middle{
     display: flex;
@@ -206,8 +215,23 @@
 }
 
 .content__main-card-middle .content__main-card-title{
-    color: var(--super-green);
     margin-bottom: 9px;
+    
+    transition: text-shadow .6s ease-in-out,
+    transform .8s ease-in-out;
+    
+    font-size: 16px;
+}
+
+.content__main-card-middle .content__main-card-title:hover{
+    text-shadow: 
+        1px 1px var(--super-green),
+        2px 2px var(--super-green);
+        
+        transform: translateY(-1px);
+        
+        transition: text-shadow .6s ease-in-out,
+                    transform .8s ease-in-out;
 }
 
 .content__main-card-middle .content__main-card-text{
@@ -220,6 +244,7 @@
 
 .content__main-cards-card .content__main-card-footer{
     display: flex;
+    margin-bottom: 20px;
 }
 
 .content__main-card-footer .content__main-card-date, 
